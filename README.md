@@ -1,1 +1,1 @@
-My second Mini Game using JS
+Made my second Mini Game using JS
