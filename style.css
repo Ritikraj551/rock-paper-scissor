@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   background-color: #a89b8c;
+  text-align: center;
+}
+h1 {
+  background-color: #edf0da;
 }
 .container {
   text-align: center;
@@ -11,21 +15,23 @@
 }
 .buttons {
   width: 80vw;
-  height: 80vh;
+  height: 60vh;
   display: flex;
   gap: 5rem;
   justify-content: center;
   align-items: center;
 }
-.choices {
+.choice {
   width: 25vmin;
   height: 25vmin;
   border-radius: 10rem;
   background-color: #aa4465;
   border-style: none;
 }
-.choices:hover {
+.choice:hover {
+  border: 5px solid rgb(104, 15, 58);
   box-shadow: 12px 10px 21px rgba(112, 4, 57, 0.7);
+  cursor: pointer;
 }
 #rock {
   background-image: url("./images/rock.png");
@@ -42,6 +48,30 @@
   background-position: center;
   background-size: contain;
 }
+#scores {
+  gap: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bolder;
+}
+div > h4 {
+  text-decoration: underline;
+}
+.move {
+  margin: 2rem;
+}
+#message {
+  display: inline;
+  background-color: black;
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 1rem;
+  border-radius: 10px;
+}
 #reset {
   font-size: 1rem;
   font-weight: bolder;
@@ -52,5 +82,6 @@
   border-style: none;
 }
 #reset:hover {
+  border: 0.2rem solid rgb(75, 64, 33);
   box-shadow: 12px 10px 21px rgba(128, 114, 77, 0.7);
 }
